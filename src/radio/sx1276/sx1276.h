@@ -367,6 +367,12 @@ void SX1276SetStby( void );
 void SX1276SetRx( uint32_t timeout );
 
 /*!
+ * \brief Sets the SX1276 in transmission mode for the given time
+ * \param [IN] timeout Transmission timeout [ms] [0: continuous, others timeout]
+ */
+void SX1276SetTx( uint32_t timeout );
+
+/*!
  * \brief Start a Channel Activity Detection
  */
 void SX1276StartCad( void );
